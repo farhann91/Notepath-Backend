@@ -1,0 +1,148 @@
+.aside {
+  background-color: rgb(237, 228, 247);
+  height: 100vh;
+  width: 200px;
+  color: #1f9af1;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  transition: 300ms linear;
+}
+.aside.passive {
+  left: -200px;
+}
+.aside ul {
+  padding-left: 0 !important;
+}
+.aside > ul li {
+  border-bottom: 1px darkgray solid;
+  padding-bottom: 0 !important;
+}
+.aside #user_related_items {
+  padding-left: 10px !important;
+  margin-bottom: 0;
+  width: 100%;
+}
+.aside #attendace_related_items {
+  padding-left: 10px !important;
+  margin-bottom: 0;
+  width: 100%;
+}
+.fas {
+  line-height: 2.4 !important;
+  font-size: 20px;
+}
+
+.fas.fa-caret-down.user {
+  margin-left: 100px;
+}
+.fas.fa-caret-down.attendance {
+  margin-left: 44px;
+}
+.open {
+  color: rgb(0, 255, 55) !important;
+  background-color: black !important;
+}
+.aside > ul li a {
+  /* border-bottom: 1px darkgray solid; */
+  padding-left: 10px !important;
+  margin-top: 10px;
+}
+.aside > ul li {
+  line-height: 2.4;
+}
+/* .aside > ul .li-header:hover {
+  cursor: pointer;
+  background-color: rgb(225, 212, 247);
+  font-size: 102%;
+  color: rgb(6, 116, 189);
+  transition: 300ms linear;
+} */
+.aside > ul li ul li a {
+  /* border-bottom: 1px darkgray solid; */
+  padding-left: 40px !important;
+}
+
+.acthive {
+  background-color: #ffffff;
+}
+.aside_item:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 102%;
+  color: rgb(6, 116, 189);
+  transition: 300ms linear;
+}
+
+.mainContent {
+  display: flex;
+  width: 83%;
+  padding: 10px;
+  padding-right: 5px;
+  margin-left: 220px;
+  margin-top: 55px;
+  transition: 300ms linear;
+}
+.mainContent.passive {
+  margin-left: 15px;
+  width: 98%;
+  padding-right: 0px;
+}
+
+/* #request {
+  width: 50%;
+}
+#response {
+  width: 50%;
+  margin-left: 10px;
+} */
+
+/*:::::::::::::::::::::::::::::: The icons:::::::::::::::::::::::::::::::: */
+.ionic-lable-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ionic-lable-icon2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ionic-lable-icon3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ionic-lable-icon3 ion-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ionic-lable-icon3 a {
+  margin-top: 0 !important;
+}
+
+#graduation {
+  line-height: 3 !important;
+}
+ion-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::Hidding and showing sidebar::::::::::::::::::::::::: */
+#hamBtn {
+  position: fixed;
+  left: 205px;
+  top: 55px;
+  /* background: black; */
+  color: rgb(252, 5, 5);
+  padding: 5px;
+  margin-top: 5px;
+  transition: 300ms linear;
+}
+#hamBtn.passive {
+  left: 2px;
+}
+#hamBtn:hover {
+  cursor: pointer;
+}

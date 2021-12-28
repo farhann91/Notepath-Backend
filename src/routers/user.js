@@ -62,7 +62,7 @@ router.post("/register", async (req, res) => {
     await user.save();
 
     //Send the OTP to the email Id provided
-    const link = `http://localhost:3000/veryfyAccount/${email}`;
+    const link = `https://notepath.netlify.app/veryfyAccount/${email}`;
     const htmlElement = `<!DOCTYPE html><html><body"><div style=" width: 90%; height: auto; background: #FFFFFF; border: 0.5px solid gray; padding-top: 0;">
                   <h1 style="background: #000000; color: #FFFFFF; width: 100%; text-align: center; margin-top: 0"> Welcome to Notepath</h1>
                    <h1 style="background: #FFFFFF; width: 100%; text-align: center;"><img src="https://i.imgur.com/nT5lovf.png"  /></h1>
@@ -186,7 +186,7 @@ router.post("/forgotPassword", async (req, res) => {
   // Check email address availability in the database
   try {
     const user = await User.findOne({ email });
-    const resetLink = `http://localhost:3000/resetpassword/?userId=${user._id}`;
+    const resetLink = `https://notepath.netlify.app/resetpassword/?userId=${user._id}`;
     // return send({ user });
     if (!user) {
       return res.send({ error_message: "Sorry email does not exisit" });
